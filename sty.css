@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(black1.jpg);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.contactcontent{
+    margin-top: 15%;
+    margin-left: 5%;
+    color: white;
+}
+.contactcontent li {
+    list-style: none;
+}
+.contactcontent li a{
+    text-decoration: none;
+transition: all .45s ease;
+color: white;
+}
+.list li a:hover{
+    color: skyblue;
+    transform: translateY(5px);
+}
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    margin-left: 50%;
+    margin-top: -20%;
+    background-color: #202020;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px white;
+}
+.contacticon i{
+    height: 45px;
+    width: 45px;
+    color: var(--text-color);
+    font-size: 22px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 15px;
+    transition: all .45s ease;
+}
+.contacticon i:hover{
+    color:skyblue;
+}
+h1 {
+    text-align: center;
+    color:white;
+    margin-bottom: 30px;
+}
+span{
+    color: skyblue;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    margin: 10px 0;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #2a2a2a;
+    color: white;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: skyblue;
+    color: #333;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    border: 2px solid skyblue;
+}
+@media only screen and (max-width: 768px) {
+    .container, .contactcontent {
+        margin: 0 auto;
+        margin-top: 5%;
+        padding: 10px;
+        max-width: 95%;
+        margin-bottom: 15px;
+    }
+
+    form {
+        margin: 0;
+    }
+
+    .contactcontent {
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .contactcontent, .container {
+        max-width: 100%;
+    }
+
+    .contacticon i {
+        margin: 5px;
+        font-size: 18px;
+    }
+
+    form input, form textarea, form button {
+        padding: 10px;
+    }
+}
